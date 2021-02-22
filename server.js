@@ -47,6 +47,7 @@ function findById(id, animalsArray) {
   return result
 }
 
+//routes
 app.get('/api/animals', (req, res) => {
   let results = animals
   if (req.query) {
@@ -57,6 +58,7 @@ app.get('/api/animals', (req, res) => {
 
 app.get('/api/animals/:id', (req, res) => {
   const result = findById(req.params.id, animals)
+  console.log(result)
   if (result) {
     res.json(result)
   } else {
