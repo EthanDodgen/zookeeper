@@ -135,6 +135,31 @@
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "Billy",
+      "species": "Bird",
+      "diet": "herbivore",
+      "personalityTraits": [],
+      "id": "14"
+    },
+    {
+      "name": "Bobby",
+      "species": "Baboon",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "zany"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Bobby",
+      "species": "Baboon",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "16"
     }
   ]
 }
