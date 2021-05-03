@@ -3,6 +3,13 @@ const {
 } = require('./data/animals')
 const express = require('express')
 const app = express()
+
+//middleware
+// parse incoming string or array data
+app.use(express.urlencoded({ extended: true }))
+// parse incoming JSON data
+app.use(express.json())
+
 const PORT = process.env.PORT || 3001
 
 // data queries
@@ -50,7 +57,7 @@ function findById(id, animalsArray) {
   return result
 }
 
-//get route
+//get routes
 app.get('/api/animals', (req, res) => {
   let results = animals
   if (req.query) {
@@ -60,7 +67,6 @@ app.get('/api/animals', (req, res) => {
 
 })
 
-//get specific animal route
 app.get('/api/animals/:id', (req, res) => {
   const result = findById(req.params.id, animals)
   if (result) {
@@ -68,6 +74,12 @@ app.get('/api/animals/:id', (req, res) => {
   } else {
     res.send(404)
   }
+})
+
+//post routes
+app.post('/api/animals', (req, res) => {
+  console.log(req.body)
+  res.json(req.body)
 })
 
 app.listen(PORT, () => {
