@@ -2,7 +2,7 @@
 
 ## Description
 
-Full Stack Application for zoo.
+Online catalog to view or add animals and zookeepers.
 
 
 ## Table of Contents
