@@ -24,7 +24,7 @@ Language(s) used in this project:
 
 You can find my repository URL [Here](https://github.com/thefival/zookeeper)
 
-You can find the deployed application [Here](zookeepers.herokuapp.com/)
+You can find the deployed application [Here](https://zookeepers.herokuapp.com/)
 
 If you have additional questions, you may reach me at my E-mail Address: thefivalco@gmail.com
 
