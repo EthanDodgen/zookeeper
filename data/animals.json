@@ -212,6 +212,15 @@
         "hungry"
       ],
       "id": "22"
+    },
+    {
+      "name": "Timmy",
+      "species": "Bird",
+      "diet": "piscivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "23"
     }
   ]
 }
